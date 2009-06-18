@@ -64,7 +64,7 @@ module GitCommands
  
   def self.pull_template
     ensure_clean_working_directory!
-    run "git pull git://github.com/thoughtbot/suspenders.git master"
+    run "git pull git://github.com/lance/suspenders.git master"
   end
 end
  
@@ -94,7 +94,7 @@ namespace :git do
   end
  
   namespace :pull do
-    desc "Pull updates from suspenders, the thoughtbot rails template."
+    desc "Pull updates from lanceball/suspenders, the modified thoughtbot rails template."
     task :suspenders do
       GitCommands.pull_template
     end
