@@ -11,3 +11,4 @@ It also adds the following plugins.
   * role_requirement v1.6
   * restful_authentication 
   * paperclip
+  * resource_controller
