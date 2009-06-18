@@ -6,7 +6,7 @@
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
   :session_key => "_CHANGEME_session",
-  :secret      => "CHANGESESSION"
+  :secret      => "asd;gjhA[SROIGASD;VMNASD;LKFNAS;DLKGJAS[DPBVIU[ DPKVNAS;D,MFNASDOFIJA[SDLKMASD]]]]"
 }
 
 # Use the database for sessions instead of the cookie-based default,
