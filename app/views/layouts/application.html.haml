@@ -1,0 +1,33 @@
+!!!
+%head
+  %meta{:name=>:description, :content=>"CHANGEME"}
+  %meta{:name=>:keywords, :content=>"CHANGEME"}
+  %meta{:name=>:author, :content=>"CHANGEME"}
+  
+  = stylesheet_link_merged 'compiled/screen.css', :media => 'screen, projection'
+  = stylesheet_link_merged 'compiled/print.css', :media => 'print'
+  /[if IE]
+    = stylesheet_link_merged 'compiled/ie.css', :media => 'screen, projection'
+  
+  = stylesheet_link_merged 'compiled/CHANGEME.css', :media=> 'screen'
+  
+  %title= yield :title
+
+%body
+  .container
+    #header
+      = render :partial => 'layouts/header'
+      
+    #navigation
+      = render :partial => 'layouts/navigation'
+      
+    #body.content
+      = render :partial => 'layouts/flashes'
+      = yield
+      
+    #footer
+      = render :partial => 'layouts/footer'
+    
+  = render :partial => 'layouts/javascript'
+  = render :partial => 'layouts/tracking'
+  
