@@ -5,11 +5,7 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
+<<<<<<< HEAD:config/initializers/session_store.rb
   :session_key => "_locomotivity_session",
   :secret      => "3e4d9143859ee74e04232b9dd386c165"
 }
-
-# Use the database for sessions instead of the cookie-based default,
-# which shouldn't be used to store highly confidential information
-# (create the session table with "rake db:sessions:create")
-# ActionController::Base.session_store = :active_record_store
