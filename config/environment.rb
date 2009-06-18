@@ -1,5 +1,12 @@
 # Be sure to restart your server when you modify this file
 
+# Change this to the name of your rails project, like carbonrally.  
+# Just use the same name as the svn repo.
+PROJECT_NAME = "CHANGEME"
+ 
+throw "The project's name in environment.rb is blank" if PROJECT_NAME.empty?
+# throw "Project name (#{PROJECT_NAME}) must_be_like_this" unless PROJECT_NAME =~ /^[a-z_]*$/
+
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '2.3.2' unless defined? RAILS_GEM_VERSION
 
@@ -19,13 +26,35 @@ Rails::Initializer.run do |config|
 
   # Specify gems that this application depends on.
   config.gem 'RedCloth',
-             :lib => 'redcloth', 
-             :version => '>= 3.0.4'
+            :lib => 'redcloth', 
+            :version => '>= 3.0.4'
   config.gem 'mislav-will_paginate', 
-             :lib => 'will_paginate', 
-             :source => 'http://gems.github.com', 
-             :version => '~> 2.3.11'
-  
+            :lib => 'will_paginate', 
+            :source => 'http://gems.github.com', 
+            :version => '~> 2.3.11'
+  config.gem "thoughtbot-factory_girl",
+            :lib    => "factory_girl",
+            :source => "http://gems.github.com"
+  config.gem "thoughtbot-shoulda",
+            :lib => "shoulda",
+            :source => "http://gems.github.com"
+  config.gem "thoughtbot-paperclip",
+            :lib => "paperclip",
+            :source => "http://gems.github.com",
+            :version => "2.2.7"
+  config.gem 'aws-s3', 
+            :lib => 'aws/s3'
+  config.gem 'haml-edge', 
+            :version => '>= 2.1.8', :lib => 'haml'
+  config.gem 'chriseppstein-compass', 
+            :version => '>= 0.6.6', 
+            :source => 'http://gems.github.com', 
+            :lib => 'compass'
+  config.gem 'rubyist-aasm', 
+            :lib => 'aasm',
+            :source => 'http://gems.github.com',
+            :version => '2.0.5'
+            
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named

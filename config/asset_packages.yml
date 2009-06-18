@@ -1,0 +1,15 @@
+--- 
+javascripts: 
+- base: 
+  - sound
+  - slider
+  - scriptaculous
+  - prototype
+  - effects
+  - dragdrop
+  - controls
+  - builder
+  - application
+stylesheets: 
+- base: 
+  - screen
