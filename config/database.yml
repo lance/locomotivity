@@ -14,8 +14,8 @@ test:
   
 staging:
   adapter: mysql
-  database: CHANGEME_staging
-  username: CHANGEME
+  database: locomotivity_staging
+  username: locomotivity
   password: <%= File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE %>
   host: localhost
   encoding: utf8
@@ -23,8 +23,8 @@ staging:
   
 production:
   adapter: mysql
-  database: CHANGEME_production
-  username: CHANGEME
+  database: locomotivity_production
+  username: locomotivity
   password: <%= File.read(PASSWORD_FILE).chomp if File.readable? PASSWORD_FILE %>
   host: localhost
   encoding: utf8
